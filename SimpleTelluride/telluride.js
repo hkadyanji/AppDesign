@@ -4,8 +4,7 @@ var sqlite = require("sqlite3");
 
 function listPerformers(req, res) {
     var db = new sqlite.Database("telluride.sqlite");
-    var db2 = new sqlite.Database("telluride.sqlite");
-    var x = 0;
+
     var resp_text = "<!DOCTYPE html>" +
         "<html>" +
         "<body><table border=\"1\" cellpadding=\"5px\" style=\"border-collapse: collapse;\"><tr><th>Performer</th><th>Stage</th><th>Time</th></tr>";
