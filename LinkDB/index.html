@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Link DB</title>
+<style>
+
+table{
+ border: 1px solid #000000;
+ border-collapse: collapse;
+}
+
+tr, td{
+ border: 1px solid #000000;
+ padding: 5px;
+}
+</style>
+</head>
+<body onload="startTime()">
+<script src="linkdb_front.js"></script>
+<h2> Link Database</h2>
+<form>
+
+<p>Add Link Here</p>
+<p>Link&nbsp;<input type="text" size=25 id="linkName"/></p>
+<p>Nickname&nbsp;<input type="text" size=20 id="nickName"/></p>
+<p><input type="button" value="Add Link" onClick="addContent()"/></p>
+<br/>
+
+<b>The Links</b>
+ <table id="myTable">
+
+ </table>
+</form>
+
+</body>
+</html>
