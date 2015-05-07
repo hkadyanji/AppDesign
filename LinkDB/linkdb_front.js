@@ -61,6 +61,6 @@ function addContent()
 
 function startTime(){
  window.setInterval(syncContent, 1000);
+ syncContent();
 }
-
 

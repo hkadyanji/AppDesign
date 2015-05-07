@@ -75,10 +75,6 @@ if(link.substring(link.length-1, link.length) === "/"){
  }
  else
  { 
-   if(link.match(/('localhost')/))
-{
-  link = link.substring(22, link.length);
-}
    var sql_cmd = "DELETE FROM LINKS  WHERE ADDRESS='" + link + "' AND NICKNAME='" + nickname + "'";
  }
  
